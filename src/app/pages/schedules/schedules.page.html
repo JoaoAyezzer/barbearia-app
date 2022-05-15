@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border header" >
+  <ion-toolbar color="primary" >
+    <ion-title>AGENDAMENTO</ion-title>
+  </ion-toolbar>
+  <ion-img src="../../assets/img/logo-neres.png"></ion-img>
+  <ion-text class="texto">
+    <h2>Escolha um serviço e profissional</h2>
+    <p>Agende um horário que se encaixe em sua <br>agenda</p>
+  </ion-text>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="primary">
+  <div class="container">
+    <div class="button">
+      <ion-button class="servico" onclick="presentModal()">
+        <ion-icon slot="start" name="cut-outline" style="margin-right: 5.2rem;"></ion-icon>
+        Serviço
+        <ion-icon slot="end" name="chevron-forward-outline" style="margin-left: 5.2rem;"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="barneiro">
+      <ion-button class="servico" disabled="true">
+        <ion-icon slot="start" name="person-outline" class="start"></ion-icon>
+        Barbeiro
+        <ion-icon slot="end" name="chevron-forward-outline" class="end"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="data">
+      <ion-button class="servico" disabled="true">
+        <ion-icon slot="start" name="time-outline" class="start-data"></ion-icon>
+        Data e Hora
+        <ion-icon slot="end" name="chevron-forward-outline" class="end-data"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>
